@@ -24,13 +24,13 @@ function createGalleryItems(items) {
 }
 
 galleryUlLb.insertAdjacentHTML("beforeend", markupLb);
-galleryUl.addEventListener("click", handleShow);
+galleryUlLb.addEventListener("click", handleShow);
 
 function handleShow(e) {
     e.preventDefault()
 }
 
-// let Lightbox = new SimpleLightbox(".gallery a", {
-//   captionsData: "alt",
-//   captionDelay: 250,
-// });
+var  Lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
