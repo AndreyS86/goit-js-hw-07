@@ -24,13 +24,8 @@ function createGalleryItems(items) {
 }
 
 galleryUlLb.insertAdjacentHTML("beforeend", markupLb);
-galleryUlLb.addEventListener("click", handleShow);
 
-function handleShow(e) {
-    e.preventDefault()
-}
-
-var  Lightbox = new SimpleLightbox(".gallery a", {
+var Lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });
