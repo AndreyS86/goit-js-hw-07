@@ -26,7 +26,10 @@ galleryUl.addEventListener("click", onClick);
 
 function onClick(e) {
   e.preventDefault();
-  if (!e.target.classList.contains("gallery__image")) {
+  if (
+    e.target.tagName !== "IMG" ||
+    !e.target.classList.contains("gallery__image")
+  ) {
     return;
   }
   const source = e.target.dataset.source;

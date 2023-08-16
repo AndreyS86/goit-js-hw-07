@@ -25,7 +25,7 @@ function createGalleryItems(items) {
 
 galleryUlLb.insertAdjacentHTML("beforeend", markupLb);
 
-var Lightbox = new SimpleLightbox(".gallery a", {
+let Lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
 });
